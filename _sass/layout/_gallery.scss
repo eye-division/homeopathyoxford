@@ -92,8 +92,10 @@
 }
 
 .gallery--boxfront {
-    margin: 0.5em;
+    margin: 0em;
+    flex: 1 100%;
     @include grid-media ($small) {
         flex: 1 25%;
+        margin: 0.5em;
     }
 }

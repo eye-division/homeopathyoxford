@@ -13,32 +13,36 @@
 
 /// small view
 .navigation--menu-button {
+    
     display: block;
     text-align: center;
     margin: 0;
     font-size: 1.5em;
-    //padding-top: 0.5em;
-    color: $navigation-color;
+    background-color: $teal;
+    color: $white;
     text-decoration: none;
-    .icon-menu {
-        fill : $navigation-color;
+    .icon--menu {
+        fill : $white;
     }
     &:link {
-        color: $navigation-color;
+        color: $white;
         text-decoration: none;
     }
     &:hover, &:active {
         text-decoration: none;
-        color: tint($navigation-color,20%);
+        color: $white;
+        background-color: darken($navigation-background,10%);
         /// menu icon
-        .icon-menu {
-            fill : tint($navigation-color,20%);
+        .icon--menu {
+            fill : $white;
         }
     }
+
     @include grid-media ($small) {
         display: none;
     }
 }
+
 .menu--title {
     font-size: 0.9em;
     font-weight: 400;
@@ -59,15 +63,16 @@ nav {
     overflow: visible;
     padding: 0;
     width: 100%;
+    background: $navigation-background;
     &.show {
-
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background: $navigation-background;
     }
     @include grid-media ($small) {
         display: flex;
-        background: $navigation-background;
+        
         flex-wrap: wrap;
         list-style: none;
         justify-content: center; // space-around;
@@ -91,8 +96,9 @@ nav {
         text-decoration: none;
         color: $navigation-color;
         display: inline-block;
+        padding: 0.5em 1em;
         @include grid-media ($small) {
-            padding: 0.5em 1em;
+            
         }
         &:hover {
             color: $navigation-color-hover;
