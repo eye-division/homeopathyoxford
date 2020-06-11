@@ -367,8 +367,12 @@ strong {
   color: #307E78; }
 
 .initial {
+  text-align: center;
   font-size: 1.2em;
   color: #307E78; }
+  @media only screen and (min-width: 488px) {
+    .initial {
+      text-align: left; } }
 
 /* Bourbon Bitters overrides - files in base - eventually ditch base directory and move all in here  */
 /* ED logo */

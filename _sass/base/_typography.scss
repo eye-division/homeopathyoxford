@@ -100,5 +100,12 @@ strong {
   color: $action-color;
 }
 
-.initial { font-size: 1.2em; color: $action-color; }
+.initial { 
+  text-align: center;
+  font-size: 1.2em; 
+  color: $action-color;
+  @include grid-media ($small) {
+    text-align: left;
+  }
+} 
 
