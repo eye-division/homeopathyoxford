@@ -22,6 +22,16 @@ h1 {
     font-size: modular-scale(4);
   }
 }
+/* header image */
+h1 { 
+  display: block; 
+  width: 365px; 
+  height: 185px; 
+  background: url('/assets/images/healingwithhomeopathy.png') no-repeat;
+  text-indent: -9999px; 
+  margin-bottom: 0;
+}
+
 h2 {
   font-size: modular-scale(2);
   @include grid-media ($small) {
@@ -79,11 +89,16 @@ hr {
   text-align: center;
 }
 blockquote {
-  padding: 1em 0;
+  padding: 0;
+  margin: 0.5em 0;
   border-bottom: 1px solid $action-color;
   font-style: italic;
+  font-size:1.1em; 
 }
 
 strong {
   color: $action-color;
 }
+
+.initial { font-size: 1.2em; color: $action-color; }
+

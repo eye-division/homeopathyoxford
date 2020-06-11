@@ -1,12 +1,18 @@
 figure {
   margin: 0 0 1.5em;
-}
-
-figcaption {
-  font-style: italic;
   text-align: center;
 }
 
+.caption, figcaption { 
+  font-style: italic;
+  display: block; 
+  margin-top: 0.5em; 
+  padding: 0.5em 0; 
+  background: #99C0C5; 
+  font-style: italic; 
+  font-size: 0.9em;  
+  text-align: center;
+}
 img,
 picture {
   margin: 0;
@@ -27,11 +33,15 @@ picture {
   }
 }
 
-.left { 
-  float:left; 
-  padding:0 0.5em 0 0; 
+div.left { 
+  @include grid-media ($small) {
+    float:left; 
+    padding:0 0.5em 0 0; 
+  }
 }
-.right { 
-  float:right; 
-  padding-left:0.5em; 
+div.right { 
+  @include grid-media ($small) {
+    float:right; 
+    padding-left:0.5em;
+  } 
 }

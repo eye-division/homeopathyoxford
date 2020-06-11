@@ -4,21 +4,23 @@ $_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($action-color, 0.7);
 
 fieldset {
   background-color: transparent;
-  border: 0;
+  border: 1px solid $action-color;
   margin: 0;
-  padding: 0;
+
 }
 
 legend {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
   padding: 0;
+  color: $action-color;
 }
 
 label {
   display: block;
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
+  color: $action-color;
 }
 
 input,
@@ -67,6 +69,7 @@ textarea {
 
 textarea {
   resize: vertical;
+  height: auto;
 }
 
 [type="checkbox"],

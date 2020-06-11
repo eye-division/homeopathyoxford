@@ -27,3 +27,9 @@ th,
 td {
   padding: $small-spacing $small-spacing $small-spacing 0;
 }
+
+.striped {
+  tbody tr:nth-child(odd) {
+    background-color: lighten($action-color,60%);
+  }
+}

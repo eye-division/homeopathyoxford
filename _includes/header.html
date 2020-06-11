@@ -1,17 +1,22 @@
 <header class="navigation" role="banner">
 
-  <div class="navigation--wrapper">
-    <a href="{{ site.baseurl }}/" class="header--wrapper" title="Return home">
+  <div class="header--wrapper">
 
-      {% if site.logo and site.show_logo %}
-        {% include img.html src=site.logo width=150 class="header--logo" alt=site.title %}
-      {% endif %}
+    <a href="{{ site.baseurl }}/" class="" title="Return home">
 
       <h1 class="header--title">{{ site.title }}</h1>
 
     </a>
 
-    <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
+    <div class="">
+      <img src="/assets/images/lotus.jpg" alt="Painting of lotus flower">
+    </div>
+
+  </div><!-- // header--wrapper -->
+
+  <div class="navigation--wrapper">
+
+     <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
       <span class="menu--title">MENU</span> <svg class="icon icon--menu"><use xlink:href="#icon-reorder" /></svg>
     </a>
 

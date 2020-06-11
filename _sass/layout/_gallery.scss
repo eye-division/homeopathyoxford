@@ -68,7 +68,7 @@
     }
 }
 .gallery--front {
-    padding: 0 1em 2em;
+    padding: 0 0 1em 0;
     background: rgba(255, 255, 255, 0.9);
 }
 
@@ -91,3 +91,9 @@
     font-size: inherit;
 }
 
+.gallery--boxfront {
+    margin: 0.5em;
+    @include grid-media ($small) {
+        flex: 1 25%;
+    }
+}

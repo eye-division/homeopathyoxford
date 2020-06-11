@@ -16,6 +16,7 @@ description: Website for Elizabeth Austin
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
+# DEV site: https://clean-lake.cloudvent.net 
 url: "https://www.homeopathyoxford.com"
 logo: "/site-icon.png"
 email: "support@eyedivision.com"
@@ -36,8 +37,8 @@ tilecolor: #ffffff
 
 # Image CDN
 imagecdn:
-#  staging: "https://ed-anneteahan-dev.imgix.net"
-#  production: "https://ed-anneteahan.imgix.net"
+#  staging: "https://ed-reflexology-dev.imgix.net"
+#  production: "https://ed-reflexology.imgix.net"
 
 # Collections Example
 collections:

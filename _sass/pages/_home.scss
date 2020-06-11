@@ -1,24 +1,34 @@
 
 .front {
 
-    .page--content {
-        @include grid-container;
-         @include grid-media ($small) {
-
-        }
-    }
+    
     .scrim {
         padding: 20em 0 0 0;
-    }
-    .gallery--front {
-        padding: 0 1em 1em;
     }
 
 }
 
-.home {
-    @include grid-media($large) { // half page width on 488px and above
-        @include grid-column(3);
-        padding-right: 60px;
+.columns {
+    @include grid-media ($small) {
+        display: flex;
+
+        div {
+            margin: 1%;
+        }
+    }
+}
+.half {
+    @include grid-media ($small) {
+        flex: 1;
+    }
+}
+.one-third {
+    @include grid-media ($small) {
+        flex: 0 1 23%; 
+    }
+}
+.two-thirds {
+    @include grid-media ($small) {
+        flex: 0 1 73%;
     }
 }

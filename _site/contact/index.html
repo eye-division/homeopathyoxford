@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://localhost:4000/contact/" />
 <meta property="og:site_name" content="Homeopathy Oxford" />
 <script type="application/ld+json">
-{"description":"Website for Elizabeth Austin","@type":"WebPage","url":"http://localhost:4000/contact/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/site-icon.png"}},"headline":"Contact and Fees","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/site-icon.png"}},"headline":"Contact and Fees","@type":"WebPage","url":"http://localhost:4000/contact/","description":"Website for Elizabeth Austin","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -154,16 +154,23 @@
 
     <header class="navigation" role="banner">
 
-  <div class="navigation--wrapper">
-    <a href="/" class="header--wrapper" title="Return home">
+  <div class="header--wrapper">
 
-      
+    <a href="/" class="" title="Return home">
 
       <h1 class="header--title">Homeopathy Oxford</h1>
 
     </a>
 
-    <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
+    <div class="">
+      <img src="/assets/images/lotus.jpg" alt="Painting of lotus flower">
+    </div>
+
+  </div><!-- // header--wrapper -->
+
+  <div class="navigation--wrapper">
+
+     <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
       <span class="menu--title">MENU</span> <svg class="icon icon--menu"><use xlink:href="#icon-reorder" /></svg>
     </a>
 
@@ -199,7 +206,7 @@
 
           
             <li class="nav--link">
-              <a href="/crystals/"  class="">Crystals</a>
+              <a href="/reiki/"  class="">Reiki</a>
             </li>
           
 
@@ -215,7 +222,7 @@
 
           
             <li class="nav--link">
-              <a href="/about/"  class="">About</a>
+              <a href="/crystals/"  class="">Crystals</a>
             </li>
           
 
@@ -223,7 +230,7 @@
 
           
             <li class="nav--link">
-              <a href="/reiki/"  class="">Reiki</a>
+              <a href="/about/"  class="">About</a>
             </li>
           
 
@@ -250,46 +257,43 @@
 
   
   <header class="page--header">
-    <h1 class="page--title">Contact and Fees</h1>
+    <h2 class="page--title">Contact and Fees</h2>
   </header>
   
 
   
-    <figure>
-    
-    
-    <img src="/assets/images/lotus.jpg?fit=crop&amp;auto=format" alt="Painting of lotus flower" />
-    <figcaption>Painting of lotus flower</figcaption>
-    </figure>
-  
 
-      <p>For all enquiries please phone 07780 542068.</p>
-    <p>If you would like to  leave a message your call will be returned within 24 hours. Alternatively you can  e-mail me on <a href="mailto:goldendancer8@yahoo.co.uk">goldendancer8@yahoo.co.uk</a> or using the <a href="#form">form below</a>.</p>
+  <p class="initial">For all enquiries please phone <a href="tel:07780-542068">07780 542068</a>.</p>
 
-    <h3>Clinics</h3>
-    <p><strong>The WellBeing Clinic</strong>,  1 Windmill Road, Headington, <a href="http://goo.gl/maps/mu1B" title="Click for a location map">OX3 7BL</a><br />
-    Phone: 01865 751111 <br />
-    e-mail:  <a href="mailto:info@wellbeingclinic.com">info@wellbeingclinic.com</a></p>
+<p>If you would like to  leave a message your call will be returned within 24 hours. Alternatively you can  e-mail me on <a href="mailto:goldendancer8@yahoo.co.uk">goldendancer8@yahoo.co.uk</a> or using the <a href="#form">form below</a>.</p>
 
-  <p>Phone calls are responded to on the same business day. Phone consultations are available for existing patients.</p>
+<h3>Clinics</h3>
+<p><strong>The WellBeing Clinic</strong>,  1 Windmill Road, Headington, <a href="http://goo.gl/maps/mu1B" title="Click for a location map">OX3 7BL</a><br />
+Phone: <a href="tel:01865-751111">01865 751111</a> <br />
+e-mail:  <a href="mailto:info@wellbeingclinic.com">info@wellbeingclinic.com</a></p>
+
+<p>Phone calls are responded to on the same business day. Phone consultations are available for existing patients.</p>
 
 
 <h3>Consultation Fees</h3>
 <p>Concessions may be given when requested.</p>
 
 <h4>Reflexology treatments</h4>
-<table>
-  <tr>
-    <td width="70%">1 hour</td>
+
+<table class="striped">
+  <tbody>
+    <tr>
+    <td width="40%">1 hour</td>
     <td width="30%">£55</td>
   </tr>
-
+</tbody>
 </table>
 
 <h4>Homeopathy treatments</h4>
-<table>
+<table class="striped">
+  <tbody>
   <tr>
-    <td colspan="3">First consultation</td>
+    <td colspan="2"><strong>First consultation</strong></td>
   </tr>
   <tr>
     <td width="40%">Adults</td>
@@ -300,7 +304,7 @@
     <td>£60</td>
   </tr>
   <tr>
-    <td colspan="2">Follow-ups</td>
+    <td colspan="2"><strong>Follow-ups</strong></td>
   </tr>
   <tr>
     <td>Adults</td>
@@ -310,49 +314,48 @@
     <td>Children</td>
     <td>£35</td>
   </tr>
+</tbody>
 </table>
 
 
-
-
 <p class="notice">A cancellation fee may be charged unless 48 hours' notice is given</p>
-	<a name="form"></a>
 
-  <form action="/thanks/" method="post">
+<a name="form"></a>
 
-      <fieldset>
-      <legend>Contact</legend>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_to" value="goldendancer8@yahoo.co.uk">
-            <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
-            <input type="hidden" name="_subject" value="Web form">
-            <p>
-            <label>Your message</label>
-            <textarea name="message" rows="5" cols="35"></textarea>
-            </p>
-            <p>
-            <label for="name">Your name:</label>
-            <input type="text" name="name">
-            </p>
-            <p>
-            <label for="_replyto">Your email:</label>
-            <input type="email" name="_replyto">
-            </p>
+<form action="/thanks/" method="post">
 
-            <div class="g-recaptcha" data-sitekey="6Lfs16gUAAAAAIBWb9Sw0nyPl9yF0CkDng0Skuf_"></div>
-
+  <fieldset>
+  <legend>Contact</legend>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_to" value="goldendancer8@yahoo.co.uk">
+        <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
+        <input type="hidden" name="_subject" value="Web form">
         <p>
-          <input type="submit" value="Send message">
+        <label>Your message</label>
+        <textarea name="message" rows="5" cols="35"></textarea>
         </p>
-      </fieldset>
+        <p>
+        <label for="name">Your name:</label>
+        <input type="text" name="name">
+        </p>
+        <p>
+        <label for="_replyto">Your email:</label>
+        <input type="email" name="_replyto">
+        </p>
 
-      </form>
+        <div class="g-recaptcha" data-sitekey="6Lfs16gUAAAAAIBWb9Sw0nyPl9yF0CkDng0Skuf_"></div>
+
+    <p>
+      <input type="submit" value="Send message">
+    </p>
+  </fieldset>
+
+  </form>
 
 
-<p><img src="/assets/images/elizabeth_austin.jpg" width="195" height="247" alt="portrait of Elizabeth Austin" /><br />
-Elizabeth Austin<br />
-<a href="http://www.homeopathy-soh.org/"><img src="/assets/images/sochomeopaths.jpg" width="195" height="53" alt="Society of Homeopaths Logo" /></a>
-</p>
+<figure><img src="/assets/images/elizabeth_austin.jpg" width="195" height="247" alt="portrait of Elizabeth Austin" /></figure>
+<figcaption>Elizabeth Austin</figcaption>
+<p><a href="http://www.homeopathy-soh.org/"><img src="/assets/images/sochomeopaths.jpg" width="195" height="53" alt="Society of Homeopaths Logo" /></a></p>
 
 <blockquote>
   <p>Elizabeth Austin has been very helpful in finding a treatment for my long term health problems. I find her to be a very intuitive therapist, who has a deep understanding of Homeopathy.</p>
@@ -380,7 +383,9 @@ Elizabeth Austin<br />
     <div class="site--contact">
 
       <ul class="social-media-list list--horizontal">
-
+        
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/links"/>Links</li></li>
         
           
         
@@ -408,7 +413,7 @@ Elizabeth Austin<br />
 
     <div class="site--signature">
       <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This <span xmlns:dct="https://purl.org/dc/terms/" href="https://purl.org/dc/dcmitype/StillImage" rel="dct:type">work</span> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-      <p>Site by <a href="https://eyedivision.com">Eye Division</a></p>
+      <div class="sponsor"><a href="https://eyedivision.com"><img src="/assets/images/ed_logo15x15w.gif" alt="Eye Division logo" width="15" height="15" />  site by Eye Division</a></div>
     </div>
 
 

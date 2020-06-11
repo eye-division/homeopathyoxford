@@ -20,6 +20,9 @@
 .header--logo {
 
 }
+/* header image */
+
+h1 { display:block; width:365px; height: 185px; background:url('/assets/images/site-title.png') no-repeat; text-indent:-9999px; margin-bottom:0;}
 
 .header--title {
     align-self: center; // flex centered
@@ -40,11 +43,18 @@
 
 /// And now, with the grid
 /* https://gridbyexample.com/ */
+
 @supports (display: grid) {
     .header--wrapper {
         display: grid;
         grid-gap: 10px;
         justify-items: center;
+        @include grid-media ($medium) {
+            grid-template-columns: 50% 50%; // two elements centered
+        }
+        > * {
+            place-self: center;
+        }
     }
     .header--logo {
         justify-self: center;

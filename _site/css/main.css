@@ -34,19 +34,20 @@ button, [type='button'], [type='reset'], [type='submit'] {
 
 fieldset {
   background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0; }
+  border: 1px solid #307E78;
+  margin: 0; }
 
 legend {
   font-weight: 600;
   margin-bottom: 0.375em;
-  padding: 0; }
+  padding: 0;
+  color: #307E78; }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.375em;
+  color: #307E78; }
 
 input,
 select,
@@ -81,7 +82,8 @@ textarea {
     color: #707070; }
 
 textarea {
-  resize: vertical; }
+  resize: vertical;
+  height: auto; }
 
 [type="checkbox"],
 [type="radio"] {
@@ -159,7 +161,7 @@ body {
   body {
     display: grid;
     grid-template-rows: max-content 1fr auto;
-    grid-gap: 1rem;
+    grid-gap: 0;
     align-items: start; } }
 dl {
   margin: 0; }
@@ -209,10 +211,17 @@ ol.default-ol {
     margin-left: -1em; }
 
 figure {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5em;
+  text-align: center; }
 
-figcaption {
+.caption, figcaption {
   font-style: italic;
+  display: block;
+  margin-top: 0.5em;
+  padding: 0.5em 0;
+  background: #99C0C5;
+  font-style: italic;
+  font-size: 0.9em;
   text-align: center; }
 
 img,
@@ -233,13 +242,15 @@ picture {
     width: 100%;
     position: absolute; }
 
-.left {
-  float: left;
-  padding: 0 0.5em 0 0; }
+@media only screen and (min-width: 488px) {
+  div.left {
+    float: left;
+    padding: 0 0.5em 0 0; } }
 
-.right {
-  float: right;
-  padding-left: 0.5em; }
+@media only screen and (min-width: 488px) {
+  div.right {
+    float: right;
+    padding-left: 0.5em; } }
 
 table {
   border-collapse: collapse;
@@ -265,6 +276,9 @@ th,
 td {
   padding: 0.75em 0.75em 0.75em 0; }
 
+.striped tbody tr:nth-child(odd) {
+  background-color: #e9f7f6; }
+
 html {
   color: #111111;
   font-family: Georgia, "Times New Roman", Times, serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
@@ -288,6 +302,15 @@ h1 {
   @media only screen and (min-width: 488px) {
     h1 {
       font-size: 2.44140625em; } }
+
+/* header image */
+h1 {
+  display: block;
+  width: 365px;
+  height: 185px;
+  background: url("/assets/images/healingwithhomeopathy.png") no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 0; }
 
 h2 {
   font-size: 1.5625em; }
@@ -334,33 +357,20 @@ hr {
   text-align: center; }
 
 blockquote {
-  padding: 1em 0;
+  padding: 0;
+  margin: 0.5em 0;
   border-bottom: 1px solid #307E78;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1.1em; }
 
 strong {
+  color: #307E78; }
+
+.initial {
+  font-size: 1.2em;
   color: #307E78; }
 
 /* Bourbon Bitters overrides - files in base - eventually ditch base directory and move all in here  */
-.container {
-  background: #fff;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-  border: 1px solid #fff;
-  -webkit-box-shadow: 3px 3px 6px #666;
-  -moz-box-shadow: 3px 3px 6px #666;
-  box-shadow: 3px 3px 6px #666; }
-
-a, a:link, a:visited {
-  color: #307E78; }
-
-a:hover {
-  color: #F26E94; }
-
-strong {
-  color: #307E78; }
-
 /* ED logo */
 .sponsor a:link {
   color: #333;
@@ -379,43 +389,10 @@ aside {
 aside, nav {
   display: block; }
 
-div.left {
+.left {
   margin-right: 1em;
   margin-bottom: 1em;
   text-align: center; }
-
-.caption {
-  display: block;
-  margin-top: 0.5em;
-  padding: 0.5em 0;
-  background: #99C0C5;
-  font-style: italic;
-  font-size: 0.9em;
-  text-align: center; }
-
-blockquote, q, cite {
-  font-style: italic;
-  color: #3399FF;
-  font-size: 1.1em; }
-
-/* header image */
-h1 {
-  display: block;
-  width: 365px;
-  height: 185px;
-  background: url("/assets/images/healingwithhomeopathy.png") no-repeat;
-  text-indent: -9999px;
-  margin-bottom: 0; }
-
-/* form */
-label, legend {
-  color: #307E78; }
-
-fieldset {
-  border: 1px solid #307E78; }
-
-textarea {
-  height: auto; }
 
 .sidebar {
   font-size: 0.9em; }
@@ -431,10 +408,6 @@ div.advert p {
   font-size: small;
   color: #666;
   text-align: center; }
-
-.initial {
-  font-size: 1.2em;
-  color: #307E78; }
 
 /*
  * jQuery FlexSlider v2.7.1
@@ -945,6 +918,15 @@ html[xmlns] .flexslider .slides {
   .header--wrapper:active, .header--wrapper:focus {
     outline: none; }
 
+/* header image */
+h1 {
+  display: block;
+  width: 365px;
+  height: 185px;
+  background: url("/assets/images/site-title.png") no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 0; }
+
 .header--title {
   align-self: center;
   font-family: Georgia, "Times New Roman", Times, serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
@@ -963,6 +945,11 @@ html[xmlns] .flexslider .slides {
     display: grid;
     grid-gap: 10px;
     justify-items: center; }
+    @media only screen and (min-width: 620px) {
+      .header--wrapper {
+        grid-template-columns: 50% 50%; } }
+    .header--wrapper > * {
+      place-self: center; }
 
   .header--logo {
     justify-self: center;
@@ -979,7 +966,6 @@ html[xmlns] .flexslider .slides {
   padding: 1em;
   background-color: white;
   text-align: center;
-  border-top: 1px solid #307E78;
   padding: 1em 0 2em 40px; }
   .site--footer a:active, .site--footer a:focus {
     outline: none; }
@@ -1049,8 +1035,8 @@ html[xmlns] .flexslider .slides {
     justify-items: center; } }
 .navigation {
   margin: 0;
-  padding: 1em 1em 0;
-  background-color: white;
+  padding: 1em 0 0;
+  background: white;
   z-index: 99; }
 
 .navigation--wrapper {
@@ -1062,18 +1048,18 @@ html[xmlns] .flexslider .slides {
   text-align: center;
   margin: 0;
   font-size: 1.5em;
-  color: #333333;
+  color: white;
   text-decoration: none; }
   .navigation--menu-button .icon-menu {
-    fill: #333333; }
+    fill: white; }
   .navigation--menu-button:link {
-    color: #333333;
+    color: white;
     text-decoration: none; }
   .navigation--menu-button:hover, .navigation--menu-button:active {
     text-decoration: none;
-    color: #5c5c5c; }
+    color: white; }
     .navigation--menu-button:hover .icon-menu, .navigation--menu-button:active .icon-menu {
-      fill: #5c5c5c; }
+      fill: white; }
   @media only screen and (min-width: 488px) {
     .navigation--menu-button {
       display: none; } }
@@ -1097,6 +1083,7 @@ html[xmlns] .flexslider .slides {
   @media only screen and (min-width: 488px) {
     .navigation--menu {
       display: flex;
+      background: #307E78;
       flex-wrap: wrap;
       list-style: none;
       justify-content: center; } }
@@ -1113,19 +1100,21 @@ html[xmlns] .flexslider .slides {
       width: auto; } }
   .nav--link a {
     text-decoration: none;
-    color: #333333;
+    color: white;
     display: inline-block; }
     @media only screen and (min-width: 488px) {
       .nav--link a {
-        padding-right: 1.5em; } }
+        padding: 0.5em 1em; } }
     .nav--link a:hover {
-      color: #d35400;
+      color: white;
+      background-color: #225955;
       text-decoration: none; }
   @media only screen and (min-width: 488px) {
     .nav--link:last-child a {
       padding-right: 1em; } }
   .nav--link.active a a {
-    color: #F26E94; }
+    color: white;
+    background-color: #225955; }
 
 .navigation--social-menu {
   display: flex;
@@ -1140,7 +1129,7 @@ html[xmlns] .flexslider .slides {
       flex: 0 1 auto; } }
 
 li.active a {
-  color: #F26E94; }
+  background-color: #225955; }
 
 .show--menu {
   display: block; }
@@ -1187,7 +1176,7 @@ li.active a {
     color: #143432; }
 
 .gallery--front {
-  padding: 0 1em 2em;
+  padding: 0 0 1em 0;
   background: rgba(255, 255, 255, 0.9); }
 
 .gallery--header {
@@ -1204,6 +1193,12 @@ li.active a {
   font-style: normal;
   color: #111111;
   font-size: inherit; }
+
+.gallery--boxfront {
+  margin: 0.5em; }
+  @media only screen and (min-width: 488px) {
+    .gallery--boxfront {
+      flex: 1 25%; } }
 
 @media only screen and (min-width: 488px) {
   input {
@@ -1231,7 +1226,18 @@ form.cart {
   padding-bottom: 120px;
   margin: 0 auto;
   flex: 1 0 auto;
-  width: 100%; }
+  width: 100%;
+  background-color: white; }
+
+.container {
+  /*
+  background:#fff; -moz-border-radius: 1em;-webkit-border-radius: 1em; 
+  border-radius: 1em; 
+  border:1px solid #fff; 
+  -webkit-box-shadow:3px 3px 6px #666; 
+  -moz-box-shadow:3px 3px 6px #666; 
+  box-shadow: 3px 3px 6px #666; 
+  */ }
 
 .page {
   padding: 0 1em 1em;
@@ -1435,8 +1441,8 @@ p.callout {
 
 .icon {
   display: inline-block;
-  width: 30px;
-  height: 30px; }
+  width: 1em;
+  height: 1em; }
 
 a:hover .icon,
 a:active .icon {
@@ -1444,9 +1450,7 @@ a:active .icon {
 
 .icon--readmore {
   fill: white;
-  margin-bottom: -5px;
-  width: 20px;
-  height: 20px; }
+  font-size: 2em; }
 
 .icon--post {
   fill: #307E78; }
@@ -1490,21 +1494,26 @@ a svg {
 a:hover .icon--light {
   fill: #cccccc; }
 
-.front .page--content::after {
-  clear: both;
-  content: "";
-  display: block; }
 .front .scrim {
   padding: 20em 0 0 0; }
-.front .gallery--front {
-  padding: 0 1em 1em; }
 
-@media only screen and (min-width: 960px) {
-  .home {
-    width: calc(75% - 17.5px);
-    float: left;
-    margin-left: 10px;
-    padding-right: 60px; } }
+@media only screen and (min-width: 488px) {
+  .columns {
+    display: flex; }
+    .columns div {
+      margin: 1%; } }
+
+@media only screen and (min-width: 488px) {
+  .half {
+    flex: 1; } }
+
+@media only screen and (min-width: 488px) {
+  .one-third {
+    flex: 0 1 23%; } }
+
+@media only screen and (min-width: 488px) {
+  .two-thirds {
+    flex: 0 1 73%; } }
 
 .profile {
   max-width: 320px;

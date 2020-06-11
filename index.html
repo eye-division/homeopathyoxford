@@ -38,102 +38,75 @@ _comments:
 ---
 
 
-  <div class="editable">
-    <p>Welcome to treatments of Reflexology, Reiki healing and Homeopathy provided by an experienced and registered practitioner of complementary medicine.<br><br>
-  Lizzie Austin MAR, RSHom</p>
+<p class="initial">Welcome to treatments of Reflexology, Reiki healing and Homeopathy provided by an experienced and registered practitioner of complementary medicine.<br><br>
+Lizzie Austin MAR, RSHom</p>
+<section class="columns">
+  <div class="two-thirds">
     <p>As a qualified practitioner of Homeopathy for many years, I trained more recently in Reflexology and Reiki, and have been amazed at the results. </p>
     <p>I have therefore increased my focus on reflexology both of the feet and the face; also using crystals with reflexology; as well as combining Reiki healing with reflexology treatments.</p>
     <p>My website will offer information about how these therapies may help you, your family and your friends achieve greater health, wellbeing and relief from stress.</p>
+    <p><strong>Not sure if Reflexology or Homeopathy can help you?</strong><br>
+    Call me for honest, professional advice on <a href="tel:07780-542068">07780 542068</a></p>
 
-     <p>Not sure if Reflexology or Homeopathy can help you?<br>
-Call me for honest, professional advice on 07780 542068</p>
-
-<p>People often seek help from reflexology, homeopathy, reiki or other complementary therapies as a form of prevention, as well as for existing conditions previously diagnosed by their medical practitioner. I will always direct patients to their medical practitioner or GP whenever necessary in order to have tests or discuss options.</p>
-
-<p>Contact Elizabeth Austin RSHom, MAR for professional advice about 
-reflexology, homeopathy and reiki healing in Oxford<br>
- (MAR, RSHom: your guarantee of a trained, registered, insured healthcare professional)</p>
+    <p>People often seek help from reflexology, homeopathy, reiki or other complementary therapies as a form of prevention, as well as for existing conditions previously diagnosed by their medical practitioner. I will always direct patients to their medical practitioner or GP whenever necessary in order to have tests or discuss options.</p>
+  
+  <p>Contact Elizabeth Austin MAR, RSHom for professional advice about reflexology, reiki and hmeopathy healing in Oxford<br>
+    (MAR, <a href="http://www.homeopathy-soh.org/" target="new">RSHom</a>: your guarantee of a trained, registered, insured healthcare professional)</p>
 
   </div>
+  <div class="one-third">
+    
+    <figure><img src="/assets/images/elizabeth_austin.jpg" width="195" height="247" alt="Portrait of Elizabeth Austin" /></figure>
+    <figcaption>Elizabeth Austin RSHom<br>
+    Classical homeopath</figcaption>
 
-    {% if page.show_carousel and page.carousel %}
-    <section class="slideshow">
-      <h2>This is a demo slideshow</h2>
-      <div class="flexslider">
-          <ul class="slides">
-            {% for slides in page.carousel %}
-            <li>
-              {% if slides.alink %}
-                 <a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">
-              {% endif %}
-              {% include img.html src=slides.image width=960 alt=slides.caption %}
-              {% if slides.alink %}
-                </a>
-              {% endif %}
-              {% if slides.caption %}
-                <p class="flex-caption">{% if slides.alink %}<a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.alink %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      {% endif %}
+    <p><a href="http://www.homeopathy-soh.org/"><img src="/assets/images/sochomeopaths.jpg" width="195" height="53" alt="Society of Homeopaths logo" /></a></p>
 
-      <!-- Regular page promotions on front page -->
-      {% for section in site.pages %}
+    <blockquote>
+      <p>The natural force within each of us is that greatest  healer of all</p>
+      <cite>Hippocrates (Ancient Greek physician)</cite>
+    </blockquote>
+    <blockquote>
+      <p>I have been fortunate enough to experience Lizzie Austin as a Homeopath, a Reflexologist, and a Reiki practitioner. In all three therapies she has been enormously helpful and effective. She is skilled at getting to the very heart of what a patient needs, and has a calming, loving presence that enhances the chosen mode of therapy. I unreservedly recommend her.</p>
+      <cite>Lesley Hayes</cite>
+    </blockquote>
 
-      {% if section.frontpage %}
+      <p><strong>The WellBeing Clinic</strong><br />
+      1 Windmill Road, Headington<br />
+      Oxford OX3 7BL<br />
+      Tel: 01865-751111 / 794363</p>
+    </div>
+</section>
+<!-- Regular page promotions on front page -->
+<div class="gallery--list gallery--front">
 
+<!-- order galleries by frontpageorder -->
+{% assign pages = site.pages | sort: 'frontpageorder' %}
+{% for section in pages %}
 
-        <section class="gallery--cover has--cover" style="background-image: url({% if section.main_image_path %}{{ section.main_image_path }}{% else %}'https://placekitten.com/g/1200/300'{% endif %});">
+  {% if section.frontpage %}
 
-          <a href="{{ section.url | prepend: site.baseurl }}">
+    <section class="gallery--cover gallery--box gallery--boxfront has--cover" style="background-image: url({% if section.main_image_path %}{{ section.main_image_path }}{% else %}'https://placekitten.com/g/1200/300'{% endif %});">
 
-            <div class="scrim has--cover">
-              <article class="gallery--front">
-                <header class="gallery--header">
-                  <h2 class="cover--title mb0">{{ section.frontpagetitle }}</h2>
-                </header>
-                {% if section.homepage_description_markdown %}
-                  {{ section.homepage_description_markdown | markdownify }}
-                  <span class="post--readmore">Read more <span> <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
+      <a href="{{ section.url | prepend: site.baseurl }}">
 
-                {% endif %}
-            </span>
-          </article>
-          </div>
-          </a>
-        </section>
+        <div class="scrim has--cover">
+          <article class="gallery--front">
+            <header class="gallery--header">
+              <h2 class="cover--title mb0">{{ section.frontpagetitle }}</h2>
+            </header>
+            {% if section.homepage_description_markdown %}
+              {{ section.homepage_description_markdown | markdownify }}
+              <span class="post--readmore">Read more <span> <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
 
-      {% endif %}
-
-    {% endfor %}
-
-
-
-{% if page.show_blog %}
-
-    <section class="blog blog--home">
-
-      <div class="editable">
-        <h2>Latest news</h2>
+            {% endif %}
+        </span>
+      </article>
       </div>
-
-      <ul class="posts--list">
-
-        {% for post in site.posts limit:page.posts_number %}
-
-         {% unless post.categories contains 'Archive' %}
-
-          {% include post_excerpt.html %}
-
-        {% endunless %}
-
-        {% endfor %}
-
-      </ul>
-      <p><a href="/news/">Read all news&nbsp;&raquo;</a></p>
-
+      </a>
     </section>
-    {% endif %}
+
+  {% endif %}
+
+{% endfor %}
+</div>

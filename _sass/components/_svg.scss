@@ -2,8 +2,8 @@
 /// SVG icons
 .icon {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 1em;
+    height: 1em;
 }
 a:hover .icon,
 a:active .icon { /// hover colour
@@ -11,9 +11,7 @@ a:active .icon { /// hover colour
 }
 .icon--readmore {
     fill: $white;
-    margin-bottom: -5px;
-    width: 20px;
-    height: 20px;
+    font-size: 2em;
 }
 .icon--post {
     fill: $action-color;

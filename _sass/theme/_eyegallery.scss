@@ -4,19 +4,6 @@
 // reset these now we've added new variables
 
 
-.container { 
-	background:#fff; -moz-border-radius: 1em;-webkit-border-radius: 1em; 
-	border-radius: 1em; 
-	border:1px solid #fff; 
-	-webkit-box-shadow:3px 3px 6px #666; 
-	-moz-box-shadow:3px 3px 6px #666; 
-	box-shadow: 3px 3px 6px #666; 
-}
-
-a, a:link, a:visited { color:#307E78; }
-a:hover { color:#F26E94; }
-strong { color:#307E78;}
-
 /* ED logo */
 
 .sponsor a:link { color:#333; text-decoration:none; }
@@ -27,38 +14,11 @@ aside { padding:0.5em 0 0; }
 aside, nav { display:block; }
 
 
-div.left { margin-right:1em; margin-bottom:1em; text-align:center; }
-
-.caption { 
-	display:block; 
-	margin-top:0.5em; 
-	padding:0.5em 0; 
-	background:#99C0C5; 
-	font-style:italic; 
-	font-size:0.9em;  
-	text-align:center;
+.left { 
+	margin-right:1em; 
+	margin-bottom:1em; 
+	text-align:center; 
 }
-blockquote, q, cite { 
-	font-style:italic; 
-	color:#3399FF; 
-	font-size:1.1em; 
-}
-
-/* header image */
-h1 { 
-	display: block; 
-	width: 365px; 
-	height: 185px; 
-	background:url('/assets/images/healingwithhomeopathy.png') no-repeat;
-	text-indent:-9999px; 
-	margin-bottom:0;
-}
-
-/* form */
-label, legend { color:#307E78; }
-fieldset { border: 1px solid #307E78; }
-textarea { height:auto; }
-
 
 .sidebar { font-size:0.9em; }
 .sidebar p { padding-right:0.5em; } 
@@ -66,4 +26,5 @@ textarea { height:auto; }
 
 
 div.advert p { font-size:small; color:#666; text-align:center;}
-.initial { font-size: 1.2em; color:#307E78; }
+
+

@@ -23,7 +23,7 @@ body {
   background-color: $base-background-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  background:url('/assets/images/bg.jpg') #99C0C5 repeat-x;
+  background: url('/assets/images/bg.jpg') #99C0C5 repeat-x;
 }
 
 /// 1. fallback to flexbox page layout
@@ -48,7 +48,7 @@ body {
     // 2. div.page--content
     // 3. footer.site--footer
 
-    grid-gap: 1rem;
+    grid-gap: 0;
     align-items: start;
   }
 }

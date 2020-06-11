@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://localhost:4000/about/" />
 <meta property="og:site_name" content="Homeopathy Oxford" />
 <script type="application/ld+json">
-{"name":"Homeopathy Oxford","description":"Website for Elizabeth Austin","@type":"WebSite","url":"http://localhost:4000/about/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/site-icon.png"}},"headline":"About","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/site-icon.png"}},"headline":"About","@type":"WebSite","url":"http://localhost:4000/about/","name":"Homeopathy Oxford","description":"Website for Elizabeth Austin","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -154,16 +154,23 @@
 
     <header class="navigation" role="banner">
 
-  <div class="navigation--wrapper">
-    <a href="/" class="header--wrapper" title="Return home">
+  <div class="header--wrapper">
 
-      
+    <a href="/" class="" title="Return home">
 
       <h1 class="header--title">Homeopathy Oxford</h1>
 
     </a>
 
-    <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
+    <div class="">
+      <img src="/assets/images/lotus.jpg" alt="Painting of lotus flower">
+    </div>
+
+  </div><!-- // header--wrapper -->
+
+  <div class="navigation--wrapper">
+
+     <a href="javascript:void(0)" class="navigation--menu-button" id="js--mobile-menu">
       <span class="menu--title">MENU</span> <svg class="icon icon--menu"><use xlink:href="#icon-reorder" /></svg>
     </a>
 
@@ -199,7 +206,7 @@
 
           
             <li class="nav--link">
-              <a href="/crystals/"  class="">Crystals</a>
+              <a href="/reiki/"  class="">Reiki</a>
             </li>
           
 
@@ -214,16 +221,16 @@
         
 
           
-            <li class="nav--link active">
-              <a href="/about/"  class="">About</a>
+            <li class="nav--link">
+              <a href="/crystals/"  class="">Crystals</a>
             </li>
           
 
         
 
           
-            <li class="nav--link">
-              <a href="/reiki/"  class="">Reiki</a>
+            <li class="nav--link active">
+              <a href="/about/"  class="">About</a>
             </li>
           
 
@@ -250,20 +257,13 @@
 
   
   <header class="page--header">
-    <h1 class="page--title">About</h1>
+    <h2 class="page--title">About</h2>
   </header>
   
 
   
-    <figure>
-    
-    
-    <img src="/assets/images/lotus.jpg?fit=crop&amp;auto=format" alt="Painting of lotus flower" />
-    <figcaption>Painting of lotus flower</figcaption>
-    </figure>
-  
 
-    <p>Following on from a correspondence course in herbal medicine, I decided to train as a professional homeopath and joined the Society of Homeopath’s professional register in the 1990’s, and began to practice.</p>
+  <p class="initial">Following on from a correspondence course in herbal medicine, I decided to train as a professional homeopath and joined the Society of Homeopath’s professional register in the 1990’s, and began to practice.</p>
   <p>I also took part in a 2-year course with workshops in transpersonal psychology around the same time, and this training nourished me personally and helped me to understand more about myself and other people.</p>
   <p>Transpersonal psychology, Buddhism and 5 rhythms dance have influenced my work in complementary medicine, and my own personal development.</p>
   <p>From 2011 I trained in Reiki healing, then as a Reflexologist, as I wished to work in a more hands-on way with people.</p>
@@ -300,7 +300,9 @@
     <div class="site--contact">
 
       <ul class="social-media-list list--horizontal">
-
+        
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/links"/>Links</li></li>
         
           
         
@@ -328,7 +330,7 @@
 
     <div class="site--signature">
       <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This <span xmlns:dct="https://purl.org/dc/terms/" href="https://purl.org/dc/dcmitype/StillImage" rel="dct:type">work</span> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-      <p>Site by <a href="https://eyedivision.com">Eye Division</a></p>
+      <div class="sponsor"><a href="https://eyedivision.com"><img src="/assets/images/ed_logo15x15w.gif" alt="Eye Division logo" width="15" height="15" />  site by Eye Division</a></div>
     </div>
 
 

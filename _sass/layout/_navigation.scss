@@ -1,8 +1,8 @@
 
 .navigation {
     margin: 0;
-    padding: 1em 1em 0;
-    background-color: $white;
+    padding: 1em 0 0;
+    background: $white;
     z-index: 99; // to cover over flexslider
 }
 /// Nav menu
@@ -60,12 +60,14 @@ nav {
     padding: 0;
     width: 100%;
     &.show {
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     @include grid-media ($small) {
         display: flex;
+        background: $navigation-background;
         flex-wrap: wrap;
         list-style: none;
         justify-content: center; // space-around;
@@ -90,10 +92,11 @@ nav {
         color: $navigation-color;
         display: inline-block;
         @include grid-media ($small) {
-            padding-right: 1.5em;
+            padding: 0.5em 1em;
         }
         &:hover {
             color: $navigation-color-hover;
+            background-color: darken($navigation-background,10%);
             text-decoration: none;
         }
     }
@@ -105,7 +108,8 @@ nav {
     }
     &.active a {
         a {
-            color: $action-hover-color
+            color: $navigation-color-hover;
+            background-color: darken($navigation-background,10%);
         }
     }
 }
@@ -125,16 +129,11 @@ nav {
 
 li.active {
     a {
-        color: $action-hover-color
+        //color: $action-hover-color;
+        background-color: darken($navigation-background,10%);
     }
 }
 
 .show--menu {
   display: block;
 }
-
-/// layout things
-
-
-
-/// grid css navigation--menu ?? not required really

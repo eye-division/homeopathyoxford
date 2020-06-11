@@ -114,10 +114,10 @@ $navigation-height: 30px;
 $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 15em;
 
-$navigation-background: $white;
-$navigation-color: $dark-gray;
-$navigation-color-hover: $orange;
-$navigation-active-link-color: $orange;
+$navigation-background: $teal; //$white; //url('/assets/images/navbgup.jpg') repeat-x 
+$navigation-color: $white;
+$navigation-color-hover: $white;
+$navigation-active-link-color: $white;
 
 // footer
 $footer-background: $white;
@@ -152,6 +152,11 @@ $small: (
   columns: 4,
   gutter: 10px,
   media: 488px,
+);
+$medium:  (
+  columns: 4,
+  gutter: 10px,
+  media: 620px,
 );
 $large: (
   columns: 4,
