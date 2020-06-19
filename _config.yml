@@ -1,23 +1,21 @@
 # External gems - updated to plugins in jekyll v3.6
 plugins:
- # - jekyll-archives # Sorry, not GitHub pages friendly!
- # - jekyll-assets
- # - autoprefixer-rails
+
    - jekyll-seo-tag
    - jekyll-sitemap
 
 # Site settings
-title: Homeopathy Oxford
-subtitle: Website for Elizabeth Austin
-name: Homeopathy Oxford
-description: Website for Elizabeth Austin
+title: Healing with Reflexology, Oxford
+subtitle: Healing with Reflexology, Reiki and Homeopathy
+name: Healing with Reflexology, Oxford
+description: Reflexology, Reiki and Homeopathy in Oxford, UK
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-# DEV site: https://clean-lake.cloudvent.net 
-url: "https://www.homeopathyoxford.com"
+
+url: "https://www.healingwithreflexologyoxford.co.uk"
 logo: "/site-icon.png"
 email: "support@eyedivision.com"
 
@@ -37,8 +35,8 @@ tilecolor: #ffffff
 
 # Image CDN
 imagecdn:
-#  staging: "https://ed-reflexology-dev.imgix.net"
-#  production: "https://ed-reflexology.imgix.net"
+#  staging: "https://ed--dev.imgix.net"
+#  production: "https://ed-.imgix.net"
 
 # Collections Example
 collections:
