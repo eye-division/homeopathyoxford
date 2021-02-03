@@ -27,4 +27,6 @@ aside, nav { display:block; }
 
 div.advert p { font-size:small; color:#666; text-align:center;}
 
-
+.button {
+	@include bbb_flat_style($cta-color, $white);
+}

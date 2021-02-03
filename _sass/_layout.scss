@@ -3,9 +3,7 @@
 // Bourbon and Neat and Bitters /base are already imported in /css/main.scss
 // TO DO - remove Bitters  in /base folder
 
-// 2. Eye Gallery theme and client custom file
-@import  'theme/eyegallery';
-//@import  'theme/vanilla';
+
 
 // 3. Vendors
 @import 'vendor/flexslider';
@@ -34,6 +32,9 @@
 // 6. Page-specific
 @import	'pages/home';
 
+// 2. Eye Gallery theme and client custom file
+@import  'theme/eyegallery';
+//@import  'theme/vanilla';
 
 // 7. Shame - nowhere found for this yet
 @import 'shame';

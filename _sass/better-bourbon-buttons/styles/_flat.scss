@@ -9,10 +9,12 @@
   color: $color;
   background: $background-color;
 
-  @include transition(all, 0.1s);
+  //@include transition(all, 0.1s);
 
   &:hover:not(:disabled) {
     background: darken($background-color, 5%);
+    color: $color;
+    text-decoration: none;
   }
 
   &:active:not(:disabled) {
