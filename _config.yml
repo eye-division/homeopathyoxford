@@ -97,7 +97,8 @@ _options:
     styles: /css/editor.scss
 
 # Google analytics
-ga_tracking_id: "UA-6013840-4"
+# ga_tracking_id: "UA-6013840-4" # old Analytics ID
+ga_traacking_id: "G-NR31KXYNC0" # G4 tag
 
 #Google Recaptcha for contact form
 
